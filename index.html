@@ -4,76 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>niconico</title>
+    <title>niconama</title>
     <style>
-        /*容器 box 高度100vh flex排版方向column 水平置中 不要垂直置中*/
+        /* 容器樣式 */
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 200vh;
+            justify-content: center; /* 讓內容垂直置中 */
+            height: 130vh;
             width: 100vw;
+            background-color: rgb(255, 255, 255);
+            padding-top: 6em; /* 讓標題與 0305-p1.png 距離 6em */
         }
-        /*容器樣式 背景顏色 #bdaa90*/
-        .container {
-            background-color: rgba(228, 222, 255, 0.85);
-        }
-        /*標題 box 寬度80% 上方間距 2em*/
-        /*標題 box 最大寬度 600px*/
-        img {
-            width: 40%;
-            margin-top: 2em;
-            max-width: 600px;
-        }
-        /*body box 編距為0*/
+
+        /* body box 邊距為 0 */
         body {
             margin: 0;
+            position: relative;
+            min-height: 100vh;
         }
-        h1 {
-            word-wrap: break-word; /* 讓長單字換行 */
-            overflow-wrap: break-word; /* 兼容不同瀏覽器 */
-            max-width: 80%; /* 讓標題不超出容器*/
+
+        /* 標題樣式 */
+        h1, h2, h3 {
             text-align: center;
             color: #000000;
-            font-size: 50px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            margin-bottom: 0.2em; /* 標題之間的間距 2em */
+        }
+
+        h1 {
+            max-width: 80%;
+            font-size: 30px;
             font-weight: 700;
             font-family: "Microsoft JhengHei", sans-serif;
         }
-        h2{
-            word-wrap: break-word;
-            overflow-wrap: break-word;
+
+        h2 {
             max-width: 80%;
-            text-align: center;
-            color: #000000;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 600;
             font-family: "Courier New", monospace;
         }
-        h3{
-            word-wrap: break-word;
-            overflow-wrap: break-word;
+
+        h3 {
             max-width: 80%;
-            text-align: center;
-            color: #000000;
-            font-size: 20px;
+            font-size: 30px;
             font-weight: 900;
             font-family: "SimSun", serif;
         }
+
+        /* 主要圖片 */
         img {
-            max-width: 100%; /* 讓圖片在不同裝置上自適應 */
-            height: auto; /* 保持圖片比例 */
-            display: block; /* 讓圖片獨立佔據一行 */
-            margin-top: 10px; /* 增加標題與圖片之間的間距 */
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 讓 0305-p1.png 放在最上方並水平置中 */
+        .top-image {
+            position: absolute;
+            top: 6em;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 400px;
+            height: 300px;
+        }
+
+        /* 讓 0305-p2.png 固定在左上角，並與邊界距離 2em */
+        .top-left-logo {
+            position: absolute;
+            top: 2em;
+            left: 2em;
+            width: 302px;
+            height: 58px;
         }
     </style>
 </head>
 <body>
 
+<!-- 讓 0305-p1 放在最上方並水平置中 -->
+<img src="0305-p1.png" alt="niconico" class="top-image">
+
+<!-- 讓 0305-p2 變成可點擊連結 -->
+<a href="https://live.nicovideo.jp/?cmnhd_ref=device%3Dpc%26site%3Dniconico%26pos%3Dheader_servicelink%26page%3Dtop" target="_blank">
+    <img src="0305-p2.png" alt="niconama" class="top-left-logo">
+</a>
+
 <div class="container">
-    <h1>正在嘗試修復網站 請稍後使用</h1>
-    <h2>We are trying to fix the website.Please try again later.</h2>
-    <h3>現在、ウェブサイトの修復を試みています。しばらくしてからご利用ください。</h3>
-    <img src="photo-output.png" height="1742" width="2048" alt="404"/>
+    <h1>糟糕！直播人流過多，請加入會員觀看</h1>
+    <h2>Oh no! There are too many viewers. Please sign up as a member to watch.</h2>
+    <h3> しまった！視聴者が多すぎます。会員登録してご覧ください。</h3>
 </div>
+
 </body>
 </html>
