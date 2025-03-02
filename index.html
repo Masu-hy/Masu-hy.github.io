@@ -11,12 +11,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
+            height: 200vh;
             width: 100vw;
         }
         /*容器樣式 背景顏色 #bdaa90*/
         .container {
-            background-color: rgba(152, 144, 189, 0.85);
+            background-color: rgba(228, 222, 255, 0.85);
         }
         /*標題 box 寬度80% 上方間距 2em*/
         /*標題 box 最大寬度 600px*/
@@ -32,12 +32,32 @@
         h1 {
             word-wrap: break-word; /* 讓長單字換行 */
             overflow-wrap: break-word; /* 兼容不同瀏覽器 */
-            max-width: 100%; /* 讓標題不超出容器*/
+            max-width: 80%; /* 讓標題不超出容器*/
             text-align: center;
-            color: #ffffff;
-            font-size: 80px;
+            color: #000000;
+            font-size: 50px;
+            font-weight: 700;
+            font-family: "Microsoft JhengHei", sans-serif;
+        }
+        h2{
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 80%;
+            text-align: center;
+            color: #000000;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: "Courier New", monospace;
+        }
+        h3{
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 80%;
+            text-align: center;
+            color: #000000;
+            font-size: 20px;
             font-weight: 900;
-            font-family: sans-serif;
+            font-family: "SimSun", serif;
         }
         img {
             max-width: 100%; /* 讓圖片在不同裝置上自適應 */
@@ -50,10 +70,10 @@
 <body>
 
 <div class="container">
-    <h1>因頻繁請求，請稍後再試</h1>
-<!--    <img src="../0305hw-pc.png" height="400" width="400"/>-->
-
+    <h1>正在嘗試修復網站 請稍後使用</h1>
+    <h2>We are trying to fix the website.Please try again later.</h2>
+    <h3>現在、ウェブサイトの修復を試みています。しばらくしてからご利用ください。</h3>
+    <img src="photo-output.png" height="1742" width="2048" alt="404"/>
 </div>
-
 </body>
 </html>
