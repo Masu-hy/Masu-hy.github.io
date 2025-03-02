@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404</title>
+    <style>
+        /*容器 box 高度100vh flex排版方向column 水平置中 不要垂直置中*/
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        /*容器樣式 背景顏色 #bdaa90*/
+        .container {
+            background-color: rgba(152, 144, 189, 0.85);
+        }
+        /*標題 box 寬度80% 上方間距 2em*/
+        /*標題 box 最大寬度 600px*/
+        img {
+            width: 40%;
+            margin-top: 2em;
+            max-width: 600px;
+        }
+        /*body box 編距為0*/
+        body {
+            margin: 0;
+        }
+        h1 {
+            word-wrap: break-word; /* 讓長單字換行 */
+            overflow-wrap: break-word; /* 兼容不同瀏覽器 */
+            max-width: 100%; /* 讓標題不超出容器*/
+            text-align: center;
+            color: #ffffff;
+            font-size: 80px;
+            font-weight: 900;
+            font-family: sans-serif;
+        }
+        img {
+            max-width: 100%; /* 讓圖片在不同裝置上自適應 */
+            height: auto; /* 保持圖片比例 */
+            display: block; /* 讓圖片獨立佔據一行 */
+            margin-top: 10px; /* 增加標題與圖片之間的間距 */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>因頻繁請求，請稍後再試</h1>
+<!--    <img src="../0305hw-pc.png" height="400" width="400"/>-->
+
+</div>
+
+</body>
+</html>
